@@ -101,7 +101,7 @@ public class Whispering {
 					} else {
 						//Idle chatter when not active, much less frequent.
 						if (rand.nextInt(10) == 0) {
-							if (isSelected) {
+							if (!haveTarget) {
 							sendMessage(myCarl, player, getRandomElementMulti(
 								chat("I'm hungry for hands."),
 								chat("I'm lonely and hungry, feed me."),
