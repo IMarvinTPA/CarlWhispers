@@ -1,17 +1,17 @@
-package com.example.examplemod;
+package com.imarvintpa.carl_whispers;
 
-import net.minecraft.init.Blocks;
+import org.apache.logging.log4j.Logger;
+
+import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.Mod.EventHandler;
 import net.minecraftforge.fml.common.event.FMLInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
-import org.apache.logging.log4j.Logger;
 
-@Mod(modid = ExampleMod.MODID, name = ExampleMod.NAME, version = ExampleMod.VERSION)
-public class ExampleMod
-{
-    public static final String MODID = "examplemod";
-    public static final String NAME = "Example Mod";
+@Mod(modid = CarlWhispersMod.MODID, name = CarlWhispersMod.NAME, version = CarlWhispersMod.VERSION, clientSideOnly=true)
+public class CarlWhispersMod {
+    public static final String MODID = "carl_whispers";
+    public static final String NAME = "Carl Whispers";
     public static final String VERSION = "1.0";
 
     private static Logger logger;
@@ -25,7 +25,8 @@ public class ExampleMod
     @EventHandler
     public void init(FMLInitializationEvent event)
     {
-        // some example code
-        logger.info("DIRT BLOCK >> {}", Blocks.DIRT.getRegistryName());
+    	MinecraftForge.EVENT_BUS.register(new Whispering());
     }
+        
+
 }

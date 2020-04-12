@@ -1,14 +1,14 @@
 [
 {
-  "modid": "examplemod",
-  "name": "Example Mod",
-  "description": "Example placeholder mod.",
+  "modid": "carl_whispers",
+  "name": "Carl Whispers",
+  "description": "Makes named items say mean things so you will use them for their purpose.  Pakratt0013 needed his named weapon to talk to him again.",
   "version": "${version}",
   "mcversion": "${mcversion}",
-  "url": "",
+  "url": "https://www.curseforge.com/minecraft/mc-mods/carl-whispers",
   "updateUrl": "",
-  "authorList": ["ExampleDude"],
-  "credits": "The Forge and FML guys, for making this example",
+  "authorList": ["IMarvinTPA"],
+  "credits": "Pakratt0013 for pining for the broken Whispering modifier for Tinkers Construct to work for his poor Carl.",
   "logoFile": "",
   "screenshots": [],
   "dependencies": []
